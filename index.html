@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("survodutide-theme");if(_t==="light"||_t==="dark
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#fdbf7f; --sky-deep:#c2410c;
-  --teal:#fdca95; --teal-deep:#431407;
-  --org:#e8561a; --org-deep:#351006;
-  --amber:#fbbf24; --rose:#ff2950; --cyan:#fddbb6;
+  --sky:#fb923c; --sky-deep:#c35a04;
+  --teal:#fbbf24; --teal-deep:#ac7d03;
+  --org:#818cf8; --org-deep:#172bf2;
+  --amber:#fb923c; --rose:#fbbf24; --cyan:#818cf8;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#fdbf7f 5%,#fdca95 50%,#e8561a 95%);
+  --grad:linear-gradient(100deg,#fcb880 5%,#fce096 50%,#1a2de8 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(194, 65, 12,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(58, 17, 6,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(67, 20, 7,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(255, 41, 80,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(194,94,12,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(6,11,58,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(67,50,7,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(250,193,46,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(194, 65, 12,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(58, 17, 6,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(67, 20, 7,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(194,94,12,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(6,11,58,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(67,50,7,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#a1360a; --sky-deep:#300e05;
-  --teal:#3a1106; --teal-deep:#210a03;
-  --org:#a1360a; --org-deep:#300e05;
-  --amber:#b45309; --rose:#ab0f37; --cyan:#4d7c0f;
+  --sky:#cc5f05; --sky-deep:#5e2c02;
+  --teal:#b48305; --teal-deep:#473402;
+  --org:#cc5f05; --org-deep:#5e2c02;
+  --amber:#1a2ff9; --rose:#cc5f05; --cyan:#b48305;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#a1360a,#3a1106,#b33c0b);
+  --grad:linear-gradient(100deg,#a14e0a,#3a2b06,#b3570b);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -84,7 +84,7 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"] #dots{opacity:.55}
 [data-theme="light"] .bg-grad{opacity:.55}
 nav.chapters{position:sticky;top:0;z-index:50;background:rgba(6,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav.chapters .rail{max-width:1080px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
+nav.chapters .rail{max-width:1280px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
 nav.chapters .rail::-webkit-scrollbar{display:none}
 nav.chapters a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:600;
   letter-spacing:.04em;padding:.42rem .8rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:all .25s ease}
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,7 +129,7 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
@@ -189,9 +189,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
 .kv .k.o{background:rgba(251, 146, 60,.12);color:var(--org);border:1px solid rgba(251, 146, 60,.35)}
 .kv .k.a{background:rgba(251, 191, 36,.12);color:var(--amber);border:1px solid rgba(251, 191, 36,.35)}
-.kv .k.g{background:rgba(255, 41, 80,.12);color:var(--rose);border:1px solid rgba(255, 41, 80,.35)}
+.kv .k.g{background:rgba(250,193,46,.12);color:var(--rose);border:1px solid rgba(250,193,46,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(194, 65, 12,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(194,94,12,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -208,7 +208,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
@@ -244,7 +244,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard p strong{color:var(--ink)}
 .lvl-known .level{background:rgba(251, 191, 36,.1);color:var(--amber);border:1px solid rgba(251, 191, 36,.4)}
 .lvl-theory .level{background:rgba(251, 146, 60,.1);color:var(--org);border:1px solid rgba(251, 146, 60,.4)}
-.lvl-unknown .level{background:rgba(255, 41, 80,.1);color:var(--rose);border:1px solid rgba(255, 41, 80,.4)}
+.lvl-unknown .level{background:rgba(250,193,46,.1);color:var(--rose);border:1px solid rgba(250,193,46,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +265,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +280,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(255, 41, 80,.05);border:1px solid rgba(255, 41, 80,.3);border-radius:var(--radius);
+.limits{background:rgba(250,193,46,.05);border:1px solid rgba(250,193,46,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -322,7 +321,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -333,6 +332,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 .seqr2{animation:seqGlow 4.5s ease-in-out .9s infinite}
 .seqr3{animation:seqGlow 4.5s ease-in-out 1.8s infinite}
 .flowseq{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
+.flowseq1{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
 .flowseq2{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out .9s infinite}
 .flowseq3{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out 1.8s infinite}
 
@@ -348,7 +348,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fdba74), var(--mpc2, #a3e635)) border-box;
+    linear-gradient(135deg, var(--mpc1, #fbd676), var(--mpc2, #a3e635)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -363,8 +363,8 @@ mini-poll { display: block; }
 .mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fdba74);
-  box-shadow: 0 0 10px var(--mpc1, #fdba74);
+  background: var(--mpc1, #fbd676);
+  box-shadow: 0 0 10px var(--mpc1, #fbd676);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +398,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fb923c));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -428,7 +428,7 @@ mini-poll { display: block; }
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
@@ -450,7 +450,7 @@ mini-poll { display: block; }
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(90deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fb923c));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
 .mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251, 191, 36,.45); }
@@ -479,6 +479,15 @@ mini-poll { display: block; }
 
 
 /* --- batch additions --- */
+.rate-h{text-align:center;margin:3rem auto 1.2rem;font-size:1.4rem;font-weight:800}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.6rem}
+@media(max-width:720px){.duo{grid-template-columns:1fr}}
+.do,.dont{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem 1.4rem}
+.do{border-top:3px solid #4ade80}.dont{border-top:3px solid #f8d271}
+.do h4,.dont h4{margin-bottom:.7rem;font-size:1.02rem}
+.do ul,.dont ul{margin:0;padding-left:1.2rem;color:var(--muted);font-size:.95rem}
+.do li,.dont li{margin-bottom:.45rem}
+.do strong,.dont strong{color:var(--ink)}
 .disc-strip{display:inline-block;margin:0 auto 1.6rem;font-size:.78rem;color:var(--muted);border:1px dashed var(--line);border-radius:999px;padding:.45rem 1.1rem;background:rgba(255,255,255,.03)}
 .disc-strip strong{color:var(--amber)}
 .scrollcue{margin-top:3rem;color:var(--faint);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;animation:bob 2.6s ease-in-out infinite}
@@ -491,7 +500,7 @@ mini-poll { display: block; }
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fdbf7f"/><stop offset="50%" stop-color="#fdca95"/><stop offset="100%" stop-color="#e8561a"/>
+      <stop offset="0%" stop-color="#fcb880"/><stop offset="50%" stop-color="#fce096"/><stop offset="100%" stop-color="#1a2de8"/>
     </linearGradient>
   </defs>
 </svg>
@@ -516,14 +525,17 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>The Partnership</a>
   <a href="#ch3"><span class="n">03</span>Liver-First Logic</a>
   <a href="#ch4"><span class="n">04</span>Trial Data</a>
-  <a href="#ch5"><span class="n">05</span>Trial Watchers</a>
-  <a href="#ch6"><span class="n">06</span>Risks & Unknowns</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch5"><span class="n">05</span>Community Reports</a>
+  <a href="#ch6"><span class="n">06</span>Head to Head</a>
+  <a href="#ch7"><span class="n">07</span>Potential Benefits</a>
+  <a href="#ch8"><span class="n">08</span>Who It May Suit</a>
+  <a href="#ch9"><span class="n">09</span>Risks & Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
-<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · The Molecule</a><a href="#ch2">02 · The Partnership</a><a href="#ch3">03 · Liver-First</a><a href="#ch4">04 · Trial Data</a><a href="#ch5">05 · Trial Watchers</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a></div></nav>
+<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · The Molecule</a><a href="#ch2">02 · The Partnership</a><a href="#ch3">03 · Liver-First</a><a href="#ch4">04 · Trial Data</a><a href="#ch5">05 · Community Reports</a><a href="#ch6">06 · Vs the Field</a><a href="#ch7">07 · Benefits</a><a href="#ch8">08 · Suit</a><a href="#ch9">09 · Risks</a><a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a></div></nav>
 
 <header class="hero">
   <div class="badge"><span class="dot"></span>GLP-1 · glucagon · investigational · obesity + MASH</div>
@@ -550,14 +562,14 @@ mini-poll { display: block; }
   <h2>What <span class="hl">survodutide</span> actually is</h2>
   <p class="lede">Survodutide is an <strong>investigational dual GLP-1/glucagon agonist</strong> from <strong>Boehringer Ingelheim and Zealand Pharma</strong> — built for <strong>obesity and MASH</strong> (fatty-liver disease) together, with the liver as the strategic prize.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 210" role="img" aria-label="Survodutide peptide chain showing dual receptor activity">
+    <svg viewBox="0 0 640 232" role="img" aria-label="Survodutide peptide chain showing dual receptor activity">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">SURVODUTIDE · ~30 AMINO ACIDS · DUAL AGONIST</text>
-      <g><circle cx="40.0" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="59.3" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="78.6" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="97.9" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="117.2" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="136.6" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="155.9" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="175.2" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="194.5" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="213.8" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="233.1" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="252.4" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="271.7" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="291.0" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="310.3" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="329.7" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="349.0" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="368.3" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="387.6" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="406.9" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="426.2" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="445.5" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="464.8" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="484.1" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="503.4" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="522.8" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="542.1" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="561.4" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="580.7" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/><circle cx="600.0" cy="93" r="8.0" fill="#e8561a" stroke="#fdbf7f" stroke-width="2"/></g>
-      <rect x="24" y="60" width="592" height="66" rx="12" fill="none" stroke="#e8561a" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/>
-      <text x="320" y="152" fill="#fdbf7f" font-size="13" font-weight="800" text-anchor="middle">TWO RECEPTOR KEYS · LIVER LEANING</text>
+      <g><circle cx="40.0" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="59.3" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="78.6" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="97.9" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="117.2" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="136.6" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="155.9" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="175.2" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="194.5" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="213.8" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="233.1" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="252.4" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="271.7" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="291.0" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="310.3" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="329.7" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="349.0" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="368.3" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="387.6" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="406.9" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="426.2" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="445.5" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="464.8" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="484.1" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="503.4" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="522.8" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="542.1" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="561.4" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="580.7" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/><circle cx="600.0" cy="93" r="8.0" fill="#1a2de8" stroke="#fcb880" stroke-width="2"/></g>
+      <rect x="24" y="60" width="592" height="66" rx="12" fill="none" stroke="#1a2de8" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/>
+      <text x="320" y="152" fill="#fcb880" font-size="13" font-weight="800" text-anchor="middle">TWO RECEPTOR KEYS · LIVER LEANING</text>
       <text x="320" y="172" fill="#7f88a5" font-size="12" text-anchor="middle">GLP-1 quiets appetite · glucagon burns — and unclogs the liver</text>
-      <rect x="170" y="186" width="300" height="4" rx="2" fill="#fdca95" opacity=".8"/>
-      <text x="320" y="206" fill="#fdca95" font-size="12" font-weight="700" text-anchor="middle">Survodutide ≈ BI 456906 · Boehringer Ingelheim + Zealand Pharma</text>
+      <rect x="170" y="186" width="300" height="4" rx="2" fill="#fce096" opacity=".8"/>
+      <text x="320" y="206" fill="#fce096" font-size="12" font-weight="700" text-anchor="middle">Survodutide ≈ BI 456906 · Boehringer Ingelheim + Zealand Pharma</text>
       <text x="320" y="222" fill="#7f88a5" font-size="11" text-anchor="middle">the dual agonist aimed at two diseases at once</text>
     </svg>
     <div class="cap">Same dual-agonist architecture as its rivals — but the program’s center of gravity is the liver, not just the scale.</div>
@@ -566,6 +578,37 @@ mini-poll { display: block; }
     <div class="card teal reveal"><h3>Glucagon: the liver switch</h3><p>Activates the <strong>glucagon receptor</strong> — raising energy burn and, crucially, <strong>directly reducing liver fat</strong>. For survodutide, this isn’t a bonus; it’s the strategy.</p></div>
     <div class="card org reveal"><h3>Two diseases, one molecule</h3><p>Obesity via the <strong>SYNCHRONIZE</strong> program; <strong>MASH</strong> (fatty-liver disease) via dedicated liver trials. Few weight drugs aim at both — that’s the differentiator.</p></div>
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>If most weight drugs are <strong>scale-first</strong>, survodutide is <strong>liver-first</strong>: the glucagon half isn’t just extra burn, it’s a direct attack on <strong>liver fat</strong> — the organ damage hiding behind obesity. Same two switches as its rivals; a <strong>different destination</strong>.</p></div>
+  <div class="diagram reveal">
+    <svg viewBox="0 0 640 250" role="img" aria-label="Survodutide receptor fingerprint: GLP-1 plus glucagon">
+      <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">RECEPTOR FINGERPRINT · WHAT MAKES IT DIFFERENT</text>
+      <g>
+        <rect x="20" y="44" width="200" height="150" rx="14" fill="#151b36" stroke="#fcb880" stroke-width="2"/>
+        <text x="120" y="76" fill="#fcb880" font-size="14" font-weight="800" text-anchor="middle">GLP-1 RECEPTOR</text>
+        <circle cx="120" cy="112" r="22" fill="none" stroke="#fcb880" stroke-width="3" class="ringp"/>
+        <circle cx="120" cy="112" r="9" fill="#fcb880"/>
+        <text x="120" y="152" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">appetite · stomach</text>
+        <text x="120" y="170" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">· glucose control</text>
+      </g>
+      <text x="320" y="124" fill="#fbbf24" font-size="34" font-weight="800" text-anchor="middle">+</text>
+      <g>
+        <rect x="420" y="44" width="200" height="150" rx="14" fill="#151b36" stroke="#1a2de8" stroke-width="2"/>
+        <text x="520" y="76" fill="#1a2de8" font-size="14" font-weight="800" text-anchor="middle">GLUCAGON RECEPTOR</text>
+        <circle cx="520" cy="112" r="22" fill="none" stroke="#1a2de8" stroke-width="3" class="ringp"/>
+        <circle cx="520" cy="112" r="9" fill="#1a2de8"/>
+        <text x="520" y="152" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">energy burn · liver fat</text>
+        <text x="520" y="170" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">· hepatic metabolism</text>
+      </g>
+      <path d="M232 119 h56" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq1"/>
+      <path d="M352 119 h56" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq3"/>
+      <text x="320" y="222" fill="#7f88a5" font-size="12" text-anchor="middle">Not tirzepatide’s combo — the full field comparison is in ch6.</text>
+    </svg>
+    <div class="cap">Two keys, one molecule — the receptor combination is the identity.</div>
+  </div>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Obesity — phase 3</h3><p>The <strong>SYNCHRONIZE</strong> program; 2026 SYNCHRONIZE-1 read out at <strong>76 weeks</strong> in adults without diabetes. Investigational — no approval.</p></div>
+    <div class="card teal reveal"><h3>Type 2 diabetes — in program</h3><p>Being studied for <strong>glycemic control</strong> alongside weight. Separate trials, separate verdict — not a package deal.</p></div>
+    <div class="card org reveal"><h3>MASH / MASLD — phase 3 liver data</h3><p>Dedicated liver program: 2024 phase 2 <strong>MASH</strong> and 2026 phase 3 <strong>MASLD</strong> results. Strong phase 3 ≠ approval for every indication.</p></div>
+  </div>
 </section>
 <mini-poll slug="survodutide-mini-ch1"
   data-question="A weight drug aimed at the liver too — does that stand out?"
@@ -580,26 +623,26 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 220" role="img" aria-label="Timeline of survodutide development">
       <line x1="70" y1="120" x2="570" y2="120" stroke="#3a4160" stroke-width="3"/>
-<circle cx="70" cy="120" r="16" fill="none" stroke="#fdbf7f" stroke-width="2" class="ringp"/>
-        <circle cx="70" cy="120" r="8" fill="#fdbf7f"/>
-        <text x="70" y="88" fill="#fdbf7f" font-size="12" font-weight="800" text-anchor="middle">2010s</text>
-        <text x="70" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Zealand peptide science</text>
-<circle cx="195" cy="120" r="16" fill="none" stroke="#fdca95" stroke-width="2" class="ringp"/>
-        <circle cx="195" cy="120" r="8" fill="#fdca95"/>
-        <text x="195" y="88" fill="#fdca95" font-size="12" font-weight="800" text-anchor="middle">2019</text>
-        <text x="195" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Boehringer partnership</text>
-<circle cx="320" cy="120" r="16" fill="none" stroke="#e8561a" stroke-width="2" class="ringp"/>
-        <circle cx="320" cy="120" r="8" fill="#e8561a"/>
-        <text x="320" y="88" fill="#e8561a" font-size="12" font-weight="800" text-anchor="middle">2022–23</text>
-        <text x="320" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Phase 2 obesity + MASH data</text>
-<circle cx="445" cy="120" r="16" fill="none" stroke="#fdbf7f" stroke-width="2" class="ringp"/>
-        <circle cx="445" cy="120" r="8" fill="#fdbf7f"/>
-        <text x="445" y="88" fill="#fdbf7f" font-size="12" font-weight="800" text-anchor="middle">2023–24</text>
-        <text x="445" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">SYNCHRONIZE phase 3 launches</text>
-<circle cx="570" cy="120" r="16" fill="none" stroke="#fdca95" stroke-width="2" class="ringp"/>
-        <circle cx="570" cy="120" r="8" fill="#fdca95"/>
-        <text x="570" y="88" fill="#fdca95" font-size="12" font-weight="800" text-anchor="middle">Today</text>
-        <text x="570" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Phase 3 ongoing; investigational</text>
+<circle cx="70" cy="120" r="16" fill="none" stroke="#fcb880" stroke-width="2" class="ringp"/>
+        <circle cx="70" cy="120" r="8" fill="#fcb880"/>
+        <text x="70" y="88" fill="#fcb880" font-size="12" font-weight="800" text-anchor="middle">2010s</text>
+        <text x="70" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Zealand peptides</text>
+<circle cx="195" cy="120" r="16" fill="none" stroke="#fce096" stroke-width="2" class="ringp"/>
+        <circle cx="195" cy="120" r="8" fill="#fce096"/>
+        <text x="195" y="88" fill="#fce096" font-size="12" font-weight="800" text-anchor="middle">2019</text>
+        <text x="195" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">BI partnership</text>
+<circle cx="320" cy="120" r="16" fill="none" stroke="#1a2de8" stroke-width="2" class="ringp"/>
+        <circle cx="320" cy="120" r="8" fill="#1a2de8"/>
+        <text x="320" y="88" fill="#1a2de8" font-size="12" font-weight="800" text-anchor="middle">2022–23</text>
+        <text x="320" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Phase 2 data</text>
+<circle cx="445" cy="120" r="16" fill="none" stroke="#fcb880" stroke-width="2" class="ringp"/>
+        <circle cx="445" cy="120" r="8" fill="#fcb880"/>
+        <text x="445" y="88" fill="#fcb880" font-size="12" font-weight="800" text-anchor="middle">2023–24</text>
+        <text x="445" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">SYNCHRONIZE launches</text>
+<circle cx="570" cy="120" r="16" fill="none" stroke="#fce096" stroke-width="2" class="ringp"/>
+        <circle cx="570" cy="120" r="8" fill="#fce096"/>
+        <text x="570" y="88" fill="#fce096" font-size="12" font-weight="800" text-anchor="middle">Today</text>
+        <text x="570" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Phase 3 ongoing</text>
       <text x="320" y="208" fill="#7f88a5" font-size="12" text-anchor="middle">A pharma–biotech tag team, from Danish peptides to global phase 3.</text>
     </svg>
     <div class="cap">A pharma–biotech tag team, from Danish peptides to global phase 3.</div>
@@ -618,38 +661,143 @@ mini-poll { display: block; }
   <h2>Why the <span class="hl">liver</span> is the prize</h2>
   <p class="lede">MASH — fatty liver progressing toward scarring — had <strong>almost no approved options</strong> until recently. Survodutide’s glucagon half attacks <strong>liver fat directly</strong>, making the liver the strategic target, not a side effect.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 240" role="img" aria-label="Four-step survodutide liver-first chain">
-      <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fdbf7f" stroke-width="2"/>
-        <circle cx="84" cy="86" r="18" fill="none" stroke="#fdbf7f" stroke-width="2" class="ringp"/>
-        <text x="84" y="118" fill="#fdbf7f">1 · GLP-1</text>
-        <text x="84" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Appetite down,</text>
-        <text x="84" y="160" fill="#a9b1c9" font-size="11" font-weight="600">intake falls</text>
-        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fdca95" stroke-width="2"/>
-        <circle cx="236" cy="86" r="18" fill="none" stroke="#fdca95" stroke-width="2" class="ringp"/>
-        <text x="236" y="118" fill="#fdca95">2 · GLUCAGON</text>
-        <text x="236" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Burn up, liver fat</text>
-        <text x="236" y="160" fill="#a9b1c9" font-size="11" font-weight="600">directly cut</text>
-        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#e8561a" stroke-width="2"/>
-        <circle cx="388" cy="86" r="18" fill="none" stroke="#e8561a" stroke-width="2" class="ringp"/>
-        <text x="388" y="118" fill="#e8561a">3 · LIVER</text>
-        <text x="388" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Steatosis down,</text>
-        <text x="388" y="160" fill="#a9b1c9" font-size="11" font-weight="600">scarring targeted</text>
-        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fdbf7f" stroke-width="2"/>
-        <circle cx="540" cy="86" r="18" fill="none" stroke="#fdbf7f" stroke-width="2" class="ringp"/>
-        <text x="540" y="118" fill="#fdbf7f">4 · RESULT</text>
-        <text x="540" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Weight down,</text>
-        <text x="540" y="160" fill="#a9b1c9" font-size="11" font-weight="600">liver healthier</text>
+    <svg viewBox="0 0 640 470" role="img" aria-label="Two pathways, one molecule: survodutide at GLP-1 and glucagon receptors">
+      <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">TWO PATHWAYS, ONE MOLECULE · RECEPTORS STAY ON THE MEMBRANE</text>
+      <text x="20" y="66" fill="#fcb880" font-size="12" font-weight="800" letter-spacing="1">GLP-1 SIDE</text>
+      <g>
+        <rect x="180" y="46" width="150" height="66" rx="12" fill="#151b36" stroke="#fcb880" stroke-width="2"/>
+        <text x="255" y="72" fill="#fcb880" font-size="12" font-weight="800" text-anchor="middle">NUTRIENTS → L-CELLS</text>
+        <text x="255" y="92" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">physiological GLP-1</text>
+        <rect x="352" y="46" width="140" height="66" rx="12" fill="#151b36" stroke="#fcb880" stroke-width="2"/>
+        <text x="422" y="72" fill="#fcb880" font-size="12" font-weight="800" text-anchor="middle">GLP-1 RECEPTOR</text>
+        <text x="422" y="92" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">cell membrane · GPCR</text>
+        <g class="seqr1">
+          <rect x="508" y="22" width="124" height="44" rx="10" fill="#10162c" stroke="#fcb880" stroke-width="1.5"/>
+          <text x="570" y="41" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">BRAIN</text>
+          <text x="570" y="58" fill="#a9b1c9" font-size="10" font-weight="600" text-anchor="middle">appetite ↓</text>
+        </g>
+        <g class="seqr2">
+          <rect x="508" y="74" width="124" height="44" rx="10" fill="#10162c" stroke="#fcb880" stroke-width="1.5"/>
+          <text x="570" y="93" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">PANCREAS</text>
+          <text x="570" y="110" fill="#a9b1c9" font-size="10" font-weight="600" text-anchor="middle">insulin ↑</text>
+        </g>
+        <g class="seqr3">
+          <rect x="508" y="126" width="124" height="44" rx="10" fill="#10162c" stroke="#fcb880" stroke-width="1.5"/>
+          <text x="570" y="145" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">STOMACH</text>
+          <text x="570" y="162" fill="#a9b1c9" font-size="10" font-weight="600" text-anchor="middle">emptying ↓</text>
+        </g>
+        <path d="M330 79 h22" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq1"/>
+        <path d="M492 66 C 498 58, 502 52, 508 47" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq2"/>
+        <path d="M492 88 h16" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq3"/>
+        <path d="M492 108 C 498 122, 502 138, 508 148" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq2"/>
       </g>
-      <g stroke="#7f88a5" stroke-width="2" fill="none">
-        <path d="M148 120 h24" class="flowseq1"/>
-<path d="M300 120 h24" class="flowseq2"/>
-<path d="M452 120 h24" class="flowseq3"/>
+      <text x="20" y="196" fill="#1a2de8" font-size="12" font-weight="800" letter-spacing="1">GLUCAGON SIDE</text>
+      <g>
+        <rect x="180" y="176" width="150" height="66" rx="12" fill="#151b36" stroke="#1a2de8" stroke-width="2"/>
+        <text x="255" y="202" fill="#1a2de8" font-size="12" font-weight="800" text-anchor="middle">GLUCAGON SYSTEM</text>
+        <text x="255" y="222" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">endogenous hormone</text>
+        <rect x="352" y="176" width="140" height="66" rx="12" fill="#151b36" stroke="#1a2de8" stroke-width="2"/>
+        <text x="422" y="202" fill="#1a2de8" font-size="12" font-weight="800" text-anchor="middle">GLUCAGON RECEPTOR</text>
+        <text x="422" y="222" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">hepatocyte membrane · GPCR</text>
+        <g class="seqr2">
+          <rect x="514" y="176" width="116" height="66" rx="10" fill="#10162c" stroke="#1a2de8" stroke-width="1.5"/>
+          <text x="572" y="200" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">LIVER · energy ↑</text>
+          <text x="572" y="218" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">fat oxidation ↑</text>
+        </g>
+        <path d="M330 209 h22" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq1"/>
+        <path d="M492 209 h22" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq3"/>
       </g>
-      <text x="320" y="220" fill="#7f88a5" font-size="12" text-anchor="middle">The liver-first chain — weight loss plus a direct liver-fat attack.</text>
+      <g>
+        <rect x="20" y="290" width="600" height="120" rx="14" fill="#0d1020" stroke="#fbbf24" stroke-width="2"/>
+        <text x="320" y="316" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">ONE SURVODUTIDE MOLECULE · ACTIVITY AT BOTH RECEPTOR SYSTEMS</text>
+        <circle r="6" fill="#fbbf24"><animateMotion dur="3.2s" repeatCount="indefinite" path="M120,352 C 140,300 150,260 165,230"/></circle>
+        <circle r="6" fill="#fbbf24"><animateMotion dur="4.1s" repeatCount="indefinite" path="M120,352 C 150,330 175,300 200,290"/></circle>
+        <circle r="6" fill="#1a2de8"><animateMotion dur="3.6s" repeatCount="indefinite" path="M520,352 C 500,320 480,290 465,250"/></circle>
+        <circle r="6" fill="#fcb880"><animateMotion dur="4.4s" repeatCount="indefinite" path="M420,352 C 420,300 422,260 422,225"/></circle>
+        <text x="320" y="352" fill="#edf0f9" font-size="13" font-weight="800" text-anchor="middle">SURVODUTIDE · BI 456906</text>
+        <text x="320" y="376" fill="#a9b1c9" font-size="11" text-anchor="middle">extracellular ligand → membrane receptor → intracellular signaling → tissue effect</text>
+        <text x="320" y="396" fill="#7f88a5" font-size="11" text-anchor="middle">never enters the nucleus · separate organs stay separate</text>
+      </g>
+      <text x="320" y="440" fill="#7f88a5" font-size="12" text-anchor="middle">Two receptor systems, one molecule — effects play out in their own tissues, over time.</text>
     </svg>
-    <div class="cap">The liver-first chain — weight loss plus a direct liver-fat attack.</div>
-  </div>  <div class="kv reveal"><span class="k s">Why the liver matters</span><p><strong>MASH</strong> starts as liver fat, progresses to inflammation and <strong>scarring (fibrosis)</strong>, and can end in cirrhosis. Weight loss helps — but a drug that <strong>directly defats the liver</strong> aims deeper.</p></div>
+    <div class="cap">Two receptor systems, one molecule — receptors stay on the membrane; effects play out in their own tissues.</div>
+  </div>
+  <div class="diagram reveal">
+    <svg viewBox="0 0 640 300" role="img" aria-label="Why dual agonism: balance of GLP-1 and glucagon activity">
+      <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">WHY DUAL AGONISM? · THE BALANCE IS THE THERAPY</text>
+      <g>
+        <rect x="20" y="44" width="270" height="120" rx="14" fill="#151b36" stroke="#fcb880" stroke-width="2"/>
+        <text x="155" y="74" fill="#fcb880" font-size="13" font-weight="800" text-anchor="middle">GLP-1 RECEPTOR ACTIVITY</text>
+        <text x="155" y="100" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">appetite down · glucose steadier</text>
+        <text x="155" y="118" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">gastric emptying slower</text>
+        <rect x="60" y="130" width="190" height="14" rx="7" fill="#fcb880" class="seqr1"/>
+        <text x="155" y="156" fill="#7f88a5" font-size="10" text-anchor="middle">in vitro: the heavier side</text>
+      </g>
+      <g>
+        <rect x="350" y="44" width="270" height="120" rx="14" fill="#151b36" stroke="#1a2de8" stroke-width="2"/>
+        <text x="485" y="74" fill="#1a2de8" font-size="13" font-weight="800" text-anchor="middle">GLUCAGON RECEPTOR ACTIVITY</text>
+        <text x="485" y="100" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">energy burn up · liver fat down</text>
+        <text x="485" y="118" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">but: raises blood glucose ⚠</text>
+        <rect x="390" y="130" width="100" height="14" rx="7" fill="#1a2de8" class="seqr2"/>
+        <text x="485" y="156" fill="#7f88a5" font-size="10" text-anchor="middle">the lighter side — by design</text>
+      </g>
+      <path d="M290 104 h60" stroke="#fbbf24" stroke-width="2" fill="none" class="flowseq2"/>
+      <path d="M155 164 C 155 200, 230 210, 290 230" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq1"/>
+      <path d="M485 164 C 485 200, 410 210, 350 230" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq3"/>
+      <rect x="230" y="222" width="180" height="40" rx="12" fill="#0d1020" stroke="#fbbf24" stroke-width="2"/>
+      <text x="320" y="247" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">COMBINED OUTCOME</text>
+      <text x="320" y="280" fill="#a9b1c9" font-size="11" text-anchor="middle">energy balance · glucose regulation · liver metabolism</text>
+    </svg>
+    <div class="cap">GLP-1 and glucagon pull blood sugar in opposite directions — the balance, not the burn, is the therapy.</div>
+  </div>
+  <div class="diagram reveal">
+    <svg viewBox="0 0 640 300" role="img" aria-label="Liver progression: fat accumulating, then gradual signaling-driven defatting">
+      <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">THE LIVER PRIZE · GRADUAL, NOT INSTANT</text>
+      <g>
+        <rect x="20" y="44" width="138" height="130" rx="12" fill="#151b36" stroke="#a9b1c9" stroke-width="1.5"/>
+        <text x="89" y="70" fill="#a9b1c9" font-size="12" font-weight="800" text-anchor="middle">NORMAL LIVER</text>
+        <circle cx="89" cy="120" r="26" fill="#0d1020" stroke="#a9b1c9" stroke-width="1.5"/>
+        <circle cx="82" cy="116" r="5" fill="#a9b1c9" opacity=".6"/>
+        <circle cx="97" cy="124" r="4" fill="#a9b1c9" opacity=".6"/>
+        <text x="89" y="162" fill="#7f88a5" font-size="10" text-anchor="middle">few fat droplets</text>
+      </g>
+      <g>
+        <rect x="172" y="44" width="138" height="130" rx="12" fill="#151b36" stroke="#fce096" stroke-width="1.5"/>
+        <text x="241" y="70" fill="#fce096" font-size="12" font-weight="800" text-anchor="middle">STEATOSIS</text>
+        <circle cx="241" cy="120" r="26" fill="#0d1020" stroke="#fce096" stroke-width="1.5"/>
+        <circle cx="232" cy="112" r="8" fill="#fce096" opacity=".85"/>
+        <circle cx="250" cy="122" r="7" fill="#fce096" opacity=".85"/>
+        <circle cx="240" cy="130" r="6" fill="#fce096" opacity=".85"/>
+        <text x="241" y="162" fill="#7f88a5" font-size="10" text-anchor="middle">fat builds in hepatocytes</text>
+      </g>
+      <g>
+        <rect x="324" y="44" width="138" height="130" rx="12" fill="#151b36" stroke="#1a2de8" stroke-width="1.5"/>
+        <text x="393" y="70" fill="#1a2de8" font-size="12" font-weight="800" text-anchor="middle">MASLD / MASH</text>
+        <circle cx="393" cy="120" r="26" fill="#0d1020" stroke="#1a2de8" stroke-width="1.5"/>
+        <circle cx="384" cy="112" r="9" fill="#1a2de8" opacity=".9" class="seqr1"/>
+        <circle cx="402" cy="122" r="8" fill="#1a2de8" opacity=".9"/>
+        <circle cx="392" cy="132" r="7" fill="#1a2de8" opacity=".9"/>
+        <path d="M384 104 l8 8 M392 104 l-8 8" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="393" y="162" fill="#7f88a5" font-size="10" text-anchor="middle">inflammation · scarring risk</text>
+      </g>
+      <g>
+        <rect x="476" y="44" width="144" height="130" rx="12" fill="#10162c" stroke="#fbbf24" stroke-width="2"/>
+        <text x="548" y="70" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">WITH SIGNALING</text>
+        <circle cx="548" cy="120" r="26" fill="#0d1020" stroke="#fbbf24" stroke-width="1.5"/>
+        <circle cx="541" cy="114" r="4" fill="#fcb880" opacity=".7"/>
+        <circle cx="556" cy="124" r="3" fill="#fcb880" opacity=".7"/>
+        <text x="548" y="162" fill="#7f88a5" font-size="10" text-anchor="middle">droplets shrink — slowly</text>
+      </g>
+      <path d="M158 109 h14" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq1"/>
+      <path d="M310 109 h14" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq2"/>
+      <path d="M462 109 h14" stroke="#fbbf24" stroke-width="2" fill="none" class="flowseq3"/>
+      <text x="320" y="208" fill="#fbbf24" font-size="12" font-weight="700" text-anchor="middle">⚠ Less fat ≠ less inflammation ≠ fibrosis gone</text>
+      <text x="320" y="230" fill="#a9b1c9" font-size="11" text-anchor="middle">Liver-fat reduction, reduced MASH activity, and fibrosis regression are three different outcomes.</text>
+      <text x="320" y="250" fill="#7f88a5" font-size="11" text-anchor="middle">Scar tissue does not evaporate — regression, if it happens, is slow and measured on biopsy.</text>
+    </svg>
+    <div class="cap">Lipid droplets shrink over weeks and months — never vanish overnight; fibrosis regression is a separate, slower question.</div>
+  </div>
+  <div class="kv reveal"><span class="k s">Why the liver matters</span><p><strong>MASH</strong> starts as liver fat, progresses to inflammation and <strong>scarring (fibrosis)</strong>, and can end in cirrhosis. Weight loss helps — but a drug that <strong>directly defats the liver</strong> aims deeper.</p></div>
   <div class="kv reveal"><span class="k t">Glucagon’s home turf</span><p>The liver is <strong>glucagon’s main stage</strong> — it’s where the hormone naturally acts. A glucagon agonist for liver disease is fighting on <strong>friendly ground</strong>, biologically speaking.</p></div>
   <div class="kv reveal"><span class="k o">The measurement challenge</span><p>Liver trials need <strong>biopsies or advanced imaging</strong> — slower, costlier, and harder than stepping on a scale. That’s why MASH programs move deliberately.</p></div><div class="plain reveal"><div class="plabel">Plain English</div><p>The logic: <strong>eat less (GLP-1), burn more and defat the liver (glucagon)</strong>. Most rivals stop at the scale; survodutide’s program keeps going to the <strong>biopsy slide</strong>. If the liver data hold, it’s not just a weight drug with a hobby — it’s a liver drug that also cuts weight.</p></div>
 </section>
@@ -662,15 +810,16 @@ mini-poll { display: block; }
 <section class="chapter" id="ch4">
   <span class="eyebrow"><span class="n">04</span>Trial data</span>
   <h2>What the <span class="hl">trials</span> actually show</h2>
-  <p class="lede">Phase 2 delivered on both fronts: <strong>weight loss</strong> and notably <strong>liver-fat reduction</strong>. Phase 3 (SYNCHRONIZE) is now running to confirm it. Here’s the measured picture so far.</p>
-    <div class="ebar"><div class="row"><span class="t">Phase 2 weight loss (48 weeks)</span><span class="v">strong, dose-dependent</span></div><div class="track"><div class="fill" style="--w:78%;background:linear-gradient(90deg,#fdca95,#fddbb6)"></div></div><div class="note">Meaningful weight reduction vs placebo — competitive with the dual-agonist class.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Phase 2 liver-fat reduction (MASH)</span><span class="v">striking MRI signals</span></div><div class="track"><div class="fill" style="--w:82%;background:linear-gradient(90deg,#fdbf7f,#fdca95)"></div></div><div class="note">Large relative liver-fat drops on imaging — the liver-first thesis, measured.</div></div>
-  <div class="ebar"><div class="row"><span class="t">GI tolerability</span><span class="v">class-typical, dose-dependent</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#e8561a,#fdbf7f)"></div></div><div class="note">Nausea-led GI effects, mostly mild-to-moderate — the familiar trade-off.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Phase 3 / approval</span><span class="v">in progress, none yet</span></div><div class="track"><div class="fill" style="--w:15%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">SYNCHRONIZE phase 3 underway; no approval anywhere.</div></div><div class="grid3">
-    <div class="card sky reveal"><h3>Weight: competitive</h3><p>Phase 2 reported <strong>strong, dose-dependent weight loss</strong> — firmly in the dual-agonist conversation.</p></div>
-    <div class="card teal reveal"><h3>Liver: the standout</h3><p><strong>Liver-fat reductions on imaging</strong> were the eye-catching result — the data point the whole program is built around.</p></div>
-    <div class="card org reveal"><h3>Phase 3 decides</h3><p>Phase 2 promise becomes medicine only via <strong>phase 3</strong>. SYNCHRONIZE is running; verdicts pending.</p></div>
-  </div><div class="plain reveal"><div class="plabel">Plain English</div><p>The phase 2 file has <strong>two strong chapters</strong>: weight down, liver fat down hard. That second one is rare air — few weight drugs even measure it. But phase 2 is the <strong>audition</strong>, phase 3 is the <strong>show</strong>, and the show hasn’t aired yet.</p></div>
+  <p class="lede">The phase 3 file is coming in: <strong>SYNCHRONIZE-1 (2026)</strong> for obesity and a <strong>phase 3 MASLD readout</strong> for the liver. Here’s the measured picture — results as reported, not promises.</p>
+    <div class="ebar reveal"><div class="row"><span class="t">SYNCHRONIZE-1 phase 3 (2026 · 76 weeks)</span><span class="v">substantial vs placebo</span></div><div class="track"><div class="fill" style="--w:85%;background:linear-gradient(90deg,#fce096,#b6bdfd)"></div></div><div class="note">Adults with <strong>obesity without diabetes</strong>; doses adjusted up to <strong>3.6 mg or 6.0 mg</strong>. Substantial weight reduction vs placebo — the biggest dataset yet.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Phase 2 MASH: improvement, no fibrosis worsening</span><span class="v">47% · 62% · 43% vs 14% placebo</span></div><div class="track"><div class="fill" style="--w:75%;background:linear-gradient(90deg,#fcb880,#fce096)"></div></div><div class="note">Across the <strong>2.4, 4.8, and 6.0 mg</strong> groups — biopsy-confirmed MASH improvement without worsening fibrosis.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">2026 phase 3 MASLD: ≥30% liver-fat reduction</span><span class="v">84.2% vs 24.3% placebo</span></div><div class="track"><div class="fill" style="--w:84%;background:linear-gradient(90deg,#1a2de8,#fcb880)"></div></div><div class="note">Efficacy estimand. Fat measured on imaging, reduced <strong>gradually</strong> — not an overnight transformation.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">GI tolerability</span><span class="v">nausea, diarrhea, vomiting</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#1a2de8,#fcb880)"></div></div><div class="note">More frequent with survodutide than placebo in the phase 2 MASH trial — often during <strong>dose escalation</strong>. Class-typical.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Approval status</span><span class="v">investigational, everywhere</span></div><div class="track"><div class="fill" style="--w:15%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">Phase 3 obesity and MASLD/MASH data are in — but <strong>no approval anywhere</strong>. Obesity, diabetes, and liver indications are separate verdicts.</div></div><div class="grid3">
+    <div class="card sky reveal"><h3>Weight: phase 3 file</h3><p><strong>SYNCHRONIZE-1 (2026)</strong>: substantial weight reduction vs placebo over <strong>76 weeks</strong>. Weight fell gradually — never a before/after makeover.</p></div>
+    <div class="card teal reveal"><h3>Liver: biopsy + imaging</h3><p>Phase 2 <strong>MASH biopsy wins</strong> and a 2026 phase 3 <strong>MASLD</strong> readout — the liver-first thesis, measured twice.</p></div>
+    <div class="card org reveal"><h3>Data in, approvals pending</h3><p>Strong results are <strong>not approvals</strong>, and trial averages are <strong>not individual predictions</strong>. Each indication stands alone.</p></div>
+  </div><div class="plain reveal"><div class="plabel">Plain English</div><p>The file now has <strong>phase 3 chapters</strong>: weight down over 76 weeks, liver fat down on both biopsy and imaging. That second one is rare air — few weight drugs even measure it. But results are <strong>what happened in trials</strong>, not what any individual should expect — and none of it is an approval.</p></div>
 </section>
 <mini-poll slug="survodutide-mini-ch4"
   data-question="Liver-fat data this strong — game changer?"
@@ -679,28 +828,142 @@ mini-poll { display: block; }
 
 <!-- ============ CHAPTER 5 ============ -->
 <section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>Trial watchers</span>
-  <h2>What <span class="hl">trial-watchers</span> say</h2>
-  <p class="lede">The conversation is about <strong>data, not vials</strong>: liver-imaging signals, the horse race with rival dual agonists, and whether MASH becomes the lead indication. Stories, not data — stamped as such.</p>
+  <span class="eyebrow"><span class="n">05</span>Community reports</span>
+  <h2>Community <span class="hl">reports</span></h2>
+  <p class="lede">Public conversation — <strong>Reddit, TikTok, YouTube Shorts, forums</strong> — about a liver-first dual agonist still in trials. Stories, not data — stamped as such.</p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div><div class="anec-grid">
-    <div class="anec reveal"><div class="anec-head"><h4>The MASH-watchers</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Liver-fat drops like that are the real story — scale is secondary.”</p><div class="caveat"><strong>Caveat:</strong> imaging endpoints in phase 2 need biopsy-confirmed phase 3 follow-through.<br><strong>Pattern:</strong> liver-first believers vs scale-watchers.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The Boehringer bet</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“BI doesn’t run phase 3 for fun — they see something.”</p><div class="caveat"><strong>Caveat:</strong> big pharma runs big trials on promising signals, not certainties — plenty still fail.<br><strong>Pattern:</strong> reading corporate commitment as data.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The dual-agonist horse race</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Survodutide vs the Lilly duals — who wins?”</p><div class="caveat"><strong>Caveat:</strong> cross-trial comparisons mislead; different designs, populations, and timepoints.<br><strong>Pattern:</strong> fantasy-league drug development.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The tolerability question</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Glucagon at these doses — heart rate, nausea, what else?”</p><div class="caveat"><strong>Caveat:</strong> the right question, and exactly what phase 3 is powered to explore.<br><strong>Pattern:</strong> skepticism aimed at the mechanism.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The MASH-desperation take</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“MASH patients have waited forever — even modest wins matter.”</p><div class="caveat"><strong>Caveat:</strong> true on unmet need; still doesn’t lower the evidence bar.<br><strong>Pattern:</strong> need framed as near-proof.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The “just wait” crowd</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Phase 2 is a trailer, not the movie.”</p><div class="caveat"><strong>Caveat:</strong> the most disciplined take in the thread.<br><strong>Pattern:</strong> patience as a position.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The access speculation</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“If approved for MASH first, that’s a totally different launch.”</p><div class="caveat"><strong>Caveat:</strong> indication order shapes pricing, coverage, and who gets it first.<br><strong>Pattern:</strong> regulatory chess, forum edition.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The liver-first believers</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“A weight drug that treats fatty liver? That’s the one to watch.”</p><div class="caveat"><strong>Caveat:</strong> excitement about the liver angle outruns biopsy confirmation.<br><strong>Pattern:</strong> mechanism enthusiasm as near-evidence.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The horse-race crowd</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Survodutide vs tirzepatide vs retatrutide — who wins obesity?”</p><div class="caveat"><strong>Caveat:</strong> cross-trial comparisons mislead; different designs, populations, timepoints.<br><strong>Pattern:</strong> fantasy-league drug development.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The MASH-desperation take</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“My liver enzymes are climbing — hurry up and approve something.”</p><div class="caveat"><strong>Caveat:</strong> real unmet need doesn’t lower the evidence bar.<br><strong>Pattern:</strong> need framed as near-proof.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The GI veterans</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“If it’s anything like the other GLP-1s, expect the nausea tour.”</p><div class="caveat"><strong>Caveat:</strong> the dual mechanism adds its own tolerability questions.<br><strong>Pattern:</strong> borrowing class experience.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The phase-3 watchers</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“SYNCHRONIZE-1 readouts will settle the dual-agonist debate.”</p><div class="caveat"><strong>Caveat:</strong> one readout settles one question, not every question.<br><strong>Pattern:</strong> trial as verdict-day.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The confusion thread</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Wait — is this the same as tirzepatide? Or retatrutide?”</p><div class="caveat"><strong>Caveat:</strong> the receptor combos really are confusing — that’s why ch6 exists.<br><strong>Pattern:</strong> name-soup fatigue.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The skeptic</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Another ‘next big thing’ — remember how the last three went?”</p><div class="caveat"><strong>Caveat:</strong> healthy skepticism; phase 3 exists precisely to test hype.<br><strong>Pattern:</strong> burned-before caution.</div></div>
     <div class="anec reveal"><div class="anec-head"><h4>The gray-market whisper</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Someone’s already selling ‘survodutide’ — avoid.”</p><div class="caveat"><strong>Caveat:</strong> correct instinct: pre-approval sales are unregulated by definition.<br><strong>Pattern:</strong> the rare useful warning.</div></div>
-  </div><div class="folk-note reveal"><p>Survodutide’s chatter is <strong>trial-stage and liver-obsessed</strong> — a cut above vial anecdotes. The fault line: <strong>imaging signals vs biopsy proof</strong>. Watch which side phase 3 lands on.</p></div>
+  </div><div class="folk-note reveal"><p>Survodutide’s chatter is <strong>trial-stage and liver-obsessed</strong>. The fault line: <strong>promising signals vs approved medicine</strong> — these are forum takes, not data points.</p></div>
 </section>
 <mini-poll slug="survodutide-mini-ch5"
-  data-question="Imaging signals vs biopsy proof — which convinces you?"
-  data-answers='[["🧬", "Biopsy — gold standard"], ["📷", "Imaging is enough signal"], ["⚖️", "Both, in phase 3"], ["📊", "Neither yet"]]'>
+  data-question="Which community-report pattern stands out to you?"
+  data-answers='[["🧬", "Liver-first believers"], ["🏇", "The horse-race crowd"], ["🤔", "Healthy skepticism"], ["📊", "Waiting for phase 3 verdicts"]]'>
 </mini-poll>
 
 <!-- ============ CHAPTER 6 ============ -->
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>Risks & unknowns</span>
+  <span class="eyebrow"><span class="n">06</span>Head to head</span>
+  <h2>Survodutide <span class="hl">vs the field</span></h2>
+  <p class="lede">The name-soup, decoded. Four drugs, four <strong>receptor fingerprints</strong> — and more receptors never automatically means stronger.</p>
+  <div class="diagram reveal">
+    <svg viewBox="0 0 640 330" role="img" aria-label="Receptor profiles: semaglutide, tirzepatide, survodutide, retatrutide">
+      <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">RECEPTOR PROFILES · READ THE COMBO, NOT THE COUNT</text>
+      <g>
+        <rect x="20" y="44" width="140" height="200" rx="12" fill="#151b36" stroke="#7f88a5" stroke-width="1.5"/>
+        <text x="90" y="72" fill="#a9b1c9" font-size="12" font-weight="800" text-anchor="middle">SEMAGLUTIDE</text>
+        <circle cx="90" cy="110" r="14" fill="#fcb880"/>
+        <text x="90" y="150" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">GLP-1</text>
+        <text x="90" y="170" fill="#7f88a5" font-size="10" text-anchor="middle">the single-switch</text>
+        <text x="90" y="188" fill="#7f88a5" font-size="10" text-anchor="middle">reference</text>
+      </g>
+      <g>
+        <rect x="172" y="44" width="140" height="200" rx="12" fill="#151b36" stroke="#7f88a5" stroke-width="1.5"/>
+        <text x="242" y="72" fill="#a9b1c9" font-size="12" font-weight="800" text-anchor="middle">TIRZEPATIDE</text>
+        <circle cx="222" cy="110" r="14" fill="#fcb880"/>
+        <circle cx="262" cy="110" r="14" fill="#fce096"/>
+        <text x="242" y="150" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">GLP-1 + GIP</text>
+        <text x="242" y="170" fill="#7f88a5" font-size="10" text-anchor="middle">the incretin pair</text>
+        <text x="242" y="188" fill="#7f88a5" font-size="10" text-anchor="middle">no glucagon</text>
+      </g>
+      <g>
+        <rect x="324" y="36" width="150" height="216" rx="12" fill="#10162c" stroke="#fbbf24" stroke-width="2.5"/>
+        <text x="399" y="62" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">SURVODUTIDE ★</text>
+        <circle cx="374" cy="104" r="14" fill="#fcb880" class="seqr1"/>
+        <circle cx="424" cy="104" r="14" fill="#1a2de8" class="seqr2"/>
+        <text x="399" y="144" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">GLP-1 + GLUCAGON</text>
+        <text x="399" y="164" fill="#7f88a5" font-size="10" text-anchor="middle">the liver-first pair</text>
+        <text x="399" y="182" fill="#7f88a5" font-size="10" text-anchor="middle">no GIP</text>
+        <text x="399" y="206" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">THIS PAGE</text>
+      </g>
+      <g>
+        <rect x="486" y="44" width="134" height="200" rx="12" fill="#151b36" stroke="#7f88a5" stroke-width="1.5"/>
+        <text x="553" y="72" fill="#a9b1c9" font-size="12" font-weight="800" text-anchor="middle">RETATRUTIDE</text>
+        <circle cx="521" cy="110" r="11" fill="#fcb880"/>
+        <circle cx="553" cy="110" r="11" fill="#fce096"/>
+        <circle cx="585" cy="110" r="11" fill="#1a2de8"/>
+        <text x="553" y="150" fill="#edf0f9" font-size="11" font-weight="700" text-anchor="middle">GLP-1+GIP+GCGR</text>
+        <text x="553" y="170" fill="#7f88a5" font-size="10" text-anchor="middle">the triple</text>
+        <text x="553" y="188" fill="#7f88a5" font-size="10" text-anchor="middle">all three switches</text>
+      </g>
+      <text x="320" y="292" fill="#fbbf24" font-size="12" font-weight="700" text-anchor="middle">≠ more switches = stronger drug</text>
+      <text x="320" y="312" fill="#7f88a5" font-size="11" text-anchor="middle">Each combination is a different pharmacological profile — read the combo, not the count.</text>
+    </svg>
+    <div class="cap">Four receptor fingerprints — the combo defines the drug, not the number of switches.</div>
+  </div>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Survodutide vs tirzepatide</h3><p>Tirzepatide pairs GLP-1 with <strong>GIP</strong>; survodutide pairs it with <strong>glucagon</strong>. One is an incretin story, the other is an <strong>energy-and-liver</strong> story — different biology, different data to watch.</p></div>
+    <div class="card teal reveal"><h3>Survodutide vs retatrutide — the close call</h3><p>Both carry <strong>glucagon-receptor agonism</strong>, so they get confused constantly. The difference: retatrutide adds <strong>GIP</strong> on top (GLP-1+GIP+glucagon) while survodutide is <strong>GLP-1+glucagon only</strong> — different incretin activity, different profiles.</p></div>
+    <div class="card org reveal"><h3>Why combos differ</h3><p>GIP, GLP-1, and glucagon each pull <strong>different metabolic levers</strong> (appetite, insulin, energy burn, liver fat). A different combo means a different weight-and-metabolism fingerprint — not a ranking.</p></div>
+  </div>
+  <div class="kv reveal"><span class="k s">The key distinction</span><p>If you mix up survodutide and retatrutide, ask: <strong>where’s the GIP?</strong> Retatrutide has it; survodutide doesn’t. If you mix up survodutide and tirzepatide, ask: <strong>where’s the glucagon?</strong> Survodutide has it; tirzepatide doesn’t.</p></div>
+</section>
+<mini-poll slug="survodutide-mini-ch6"
+  data-question="Survodutide vs retatrutide — clearest distinction?"
+  data-answers='[["🧬", "GIP: retatrutide has it, survodutide doesn\u2019t"], ["🎯", "Liver focus differs"], ["📊", "Trial data maturity"], ["🤔", "Still confusing"]]'>
+</mini-poll>
+
+<!-- ============ CHAPTER 7 ============ -->
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Potential benefits</span>
+  <h2>Potential benefits, <span class="hl">tiered by evidence</span></h2>
+  <p class="lede">What survodutide might offer — sorted by <strong>how well it is actually supported</strong>, from reported trial outcomes to forum noise. The tiers are not equal.</p>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Tier 1 · Established data</h3><ul>
+      <li><strong>Weight reduction vs placebo</strong> over 76 weeks (SYNCHRONIZE-1, adults with obesity without diabetes)</li>
+      <li><strong>≥30% liver-fat reduction</strong> reached by 84.2% vs 24.3% on placebo (2026 MASLD phase 3, imaging)</li>
+      <li><strong>MASH improvement on biopsy</strong> without fibrosis worsening (phase 2: 47% / 62% / 43% vs 14% placebo)</li>
+    </ul></div>
+    <div class="card teal reveal"><h3>Tier 2 · Predicted / emerging</h3><ul>
+      <li>The <strong>liver-first thesis</strong>: glucagon agonism may improve MASH beyond weight loss alone — pending confirmation</li>
+      <li>Possible <strong>cardiometabolic improvements</strong> — still investigational, not established outcomes</li>
+      <li>A <strong>first-in-class profile</strong>: no dual GLP-1/glucagon agonist is approved anywhere</li>
+    </ul></div>
+    <div class="card org reveal"><h3>Tier 3 · Community anecdotes</h3><ul>
+      <li><strong>Trial-stage chatter only</strong> — no approved-medicine user stories exist</li>
+      <li>Forum horse-racing (vs tirzepatide vs retatrutide) is <strong>entertainment, not evidence</strong></li>
+      <li>"Hurry up and approve" posts reflect <strong>real need — need is not proof</strong></li>
+    </ul></div>
+  </div>
+  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Stories, not data</strong> — Tier 3 gets the pulsing-dot treatment: paraphrased forum chatter, kept strictly separate from the measured science in Tiers 1 and 2.</p></div>
+  <div class="plain reveal"><div class="plabel">Think of it this way</div><p>Tier 1 is the <strong>scoreboard</strong> — what the trials recorded. Tier 2 is the <strong>scouting report</strong> — what the mechanism suggests might come. Tier 3 is the <strong>crowd noise</strong> — loud, fun, and worth exactly nothing as evidence.</p></div>
+</section>
+<mini-poll slug="survodutide-mini-benefits"
+  data-question="Which potential benefit matters most?"
+  data-answers='[["📉", "Weight reduction"], ["🧬", "Liver-fat reduction"], ["🔬", "MASH improvement"], ["⏳", "Still investigational — waiting"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Who it may suit</span>
+  <h2>Who it may suit — <span class="hl">and who it should not</span></h2>
+  <p class="lede">Survodutide is <strong>investigational with no approved indications</strong> — so "who it suits" describes whose situation the research covers, not who should take anything.</p>
+  <div class="duo">
+    <div class="do reveal"><h4>✅ Who the research covers</h4><ul>
+      <li><strong>Adults with obesity</strong> — the SYNCHRONIZE-1 trial population (without diabetes)</li>
+      <li><strong>People with MASH / MASLD</strong> — the liver program's population</li>
+      <li>Readers tracking the <strong>GLP-1 + glucagon drug class</strong> as the data develops</li>
+    </ul></div>
+    <div class="dont reveal"><h4>❌ Who it does not suit</h4><ul>
+      <li>Anyone seeking a <strong>prescribable medicine today</strong> — investigational, not approved anywhere</li>
+      <li>Anyone expecting <strong>trial averages to predict their own outcome</strong> — population data, not promises</li>
+      <li>Anyone needing <strong>proven long-term heart safety</strong> — still unmeasured</li>
+    </ul></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>This is <strong>general information, not personal medical advice</strong>. Trial populations define who the data covers — any future approved indications would be decided by regulators and clinicians, not by this page.</p></div>
+</section>
+<mini-poll slug="survodutide-mini-fit"
+  data-question="Trial populations define the data — your take?"
+  data-answers='[["🎯", "Right — data covers them only"], ["📊", "Partly generalizable"], ["💊", "Waiting for approval"], ["🤷", "Unsure"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks & <span class="hl">unknowns</span></h2>
   <p class="lede">A liver-first dual agonist carries the <strong>class risks plus glucagon-specific questions</strong>. Here’s what trials saw, what the mechanism suggests, and what’s still unmeasured.</p>
   <div class="safety-grid">
@@ -710,91 +973,95 @@ mini-poll { display: block; }
     <div class="scard lvl-theory reveal"><span class="level">Theoretical</span><h4>The glucose tightrope</h4><p><strong>Theoretical:</strong> glucagon raises blood sugar; GLP-1 is supposed to counteract it. In patients with <strong>fragile glucose control</strong>, the balance deserves watching.</p></div>
     <div class="scard lvl-unknown reveal"><span class="level">Unknown</span><h4>Long-term dual exposure</h4><p><strong>Unknown:</strong> years of combined GLP-1 + glucagon signaling is <strong>uncharted</strong> — trials measure months to a few years.</p></div>
     <div class="scard lvl-unknown reveal"><span class="level">Unknown</span><h4>Liver-specific unknowns</h4><p><strong>Unknown:</strong> rapid liver defatting sounds purely good — but <strong>how fast is safe</strong>, and what happens to scarred tissue long-term, is still being learned.</p></div>
-  </div><div class="plain reveal"><div class="plabel">Plain English</div><p>Known: <strong>investigational</strong>, with <strong>class-typical gut effects</strong>. Theoretical: <strong>heart-rate and glucose-balance</strong> questions from the glucagon half. Unknown: <strong>long-term dual exposure</strong> and the pace of liver remodeling. Strong phase 2 doesn’t close any of these boxes.</p></div>
+  </div>
+  <div class="duo">
+    <div class="do reveal"><h4>✅ What it does</h4><ul>
+      <li><strong>Activates two receptor systems</strong> — GLP-1 (appetite, glucose) and glucagon (energy burn, liver fat).</li>
+      <li><strong>Reduces appetite and food intake</strong> — the main driver of weight loss.</li>
+      <li><strong>Reduces liver fat</strong> measured on imaging and biopsy readouts — gradually, over months.</li>
+      <li><strong>Causes GI effects</strong> in a meaningful share of trial participants — mostly during dose escalation.</li>
+    </ul></div>
+    <div class="dont reveal"><h4>❌ What it doesn’t do</h4><ul>
+      <li><strong>Not a fat-dissolving compound</strong> — it does not selectively destroy adipocytes.</li>
+      <li><strong>Liver-fat reduction ≠ reversing cirrhosis</strong> — advanced scarring is a different question.</li>
+      <li><strong>Doesn’t guarantee any individual outcome</strong> — trial averages are population data.</li>
+      <li><strong>Doesn’t prove long-term heart safety</strong> — cardiovascular outcomes need dedicated trials.</li>
+    </ul></div>
+  </div>
+  <div class="kv reveal"><span class="k o">GI effects: the honest picture</span><p>In the phase 2 MASH trial, <strong>nausea, diarrhea, and vomiting</strong> were more frequent with survodutide than placebo — a physiological consequence of the mechanism, often worst during <strong>dose escalation</strong>, not a scary anomaly.</p></div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>Known: <strong>investigational</strong>, with <strong>class-typical gut effects</strong>. Theoretical: <strong>heart-rate and glucose-balance</strong> questions from the glucagon half. Unknown: <strong>long-term dual exposure</strong> and the pace of liver remodeling. Strong phase 2 doesn’t close any of these boxes.</p></div>
 </section>
-<mini-poll slug="survodutide-mini-ch6"
+<mini-poll slug="survodutide-mini-ch9"
   data-question="Biggest open question for survodutide?"
   data-answers='[["❤️", "Long-term heart effects"], ["🧬", "Rapid liver defatting safety"], ["🤢", "Tolerability at scale"], ["❓", "All of them"]]'>
 </mini-poll>
 
-<!-- ============ CHAPTER 7 ============ -->
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">liver-first</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">Survodutide</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#fdbf7f" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#fdbf7f"/></svg><span class="term">Survodutide</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>BI 456906: an investigational dual GLP-1/glucagon receptor agonist co-developed by Boehringer Ingelheim and Zealand Pharma — phase 3 for obesity (SYNCHRONIZE), trials in MASH; not approved.</p>
-      <p class="gex"><span class="gslabel">Example</span>The molecule itself — the subject of this whole page.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The liver-first dual agonist — two switches, two diseases.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#fcb880" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#fcb880"/></svg><span class="term">Survodutide</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>BI 456906, an investigational dual agonist that activates both the GLP-1 receptor and the glucagon receptor. It was co-developed by Zealand Pharma and Boehringer Ingelheim and is being tested in phase 3 trials (the SYNCHRONIZE program) for chronic weight management, plus separate trials for MASH, a serious form of fatty-liver disease. It has not been approved by any regulator for any use.</p>
+      <div class="plain"><span class="plabel">Plain English</span>An experimental drug that presses two buttons at once: one quiets hunger, the other tells the liver to burn fat. Two companies built it together, and it is now in large global trials — but it is not approved and no doctor can prescribe it yet. It is the liver program, more than the weight program, that makes this molecule stand out from its rivals.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fdca95" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fdca95" stroke-width="2.5"/></svg><span class="term">GLP-1</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Glucagon-like peptide-1: the appetite-quieting, stomach-slowing, sugar-steadying gut hormone behind the modern weight-drug class.</p>
-      <p class="gex"><span class="gslabel">Example</span>The proven half — the appetite switch.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The “put the fork down” hormone.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fce096" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fce096" stroke-width="2.5"/></svg><span class="term">GLP-1</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Glucagon-like peptide-1, an incretin hormone released by intestinal L-cells after eating. It acts on receptors in the brain to reduce appetite, slows gastric emptying, and stimulates insulin release in a glucose-dependent manner. Synthetic GLP-1 receptor agonists are the approved drug class behind the modern weight-loss medicines, and they form the foundation survodutide builds on.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A natural gut hormone released after you eat that tells your brain you are full, slows how fast your stomach empties, and helps steady blood sugar. Drug versions of it are the famous weight-loss medicines — survodutide’s GLP-1 half is borrowing that proven trick. It is the best-understood half of the molecule, with years of approved medicines behind it.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><path d="M10 24h28M24 10v28" fill="none" stroke="#e8561a" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Glucagon</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The hormone that mobilizes liver glucose — and at drug doses raises energy expenditure and cuts liver fat.</p>
-      <p class="gex"><span class="gslabel">Example</span>The liver half — the burn-and-defat switch.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The “burn fuel” hormone — at home in the liver.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><path d="M10 24h28M24 10v28" fill="none" stroke="#1a2de8" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Glucagon</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A peptide hormone secreted by pancreatic alpha cells whose classical role is raising blood glucose by stimulating glycogen breakdown and glucose production in the liver. It also increases energy expenditure and promotes hepatic fat oxidation, which is why drug developers are pairing glucagon-receptor activity with GLP-1 in obesity and liver-disease programs. Unopposed glucagon would raise blood sugar too much, so pairing it with GLP-1’s glucose-stabilizing action is the design rationale.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The counterpart to insulin: when blood sugar runs low, it tells the liver to release stored sugar. At drug doses it also burns extra energy and helps the liver clear out fat. On its own it would push blood sugar too high — that is why it is always paired with the GLP-1 half, which keeps sugar steady.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#fdbf7f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">MASH</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Metabolic dysfunction-associated steatohepatitis: fatty liver with inflammation, which can progress to scarring (fibrosis) and cirrhosis. Long had almost no approved treatments.</p>
-      <p class="gex"><span class="gslabel">Example</span>The moonshot indication — the disease the liver program targets.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Fatty liver turned dangerous — fat plus inflammation plus scarring.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#fcb880" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">MASH</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Metabolic dysfunction-associated steatohepatitis, the inflammatory, progressive stage of metabolic fatty-liver disease. It begins with fat accumulation in liver cells plus inflammation and cell injury, and it can advance to fibrosis, cirrhosis, and liver cancer. For years it had no approved drug therapy; the first conditional approvals only arrived in 2024, and several agents are now in late-stage trials.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A serious form of fatty-liver disease where stored liver fat is joined by inflammation and cell damage. Left unchecked it can scar the liver into cirrhosis or lead to cancer. Until very recently, doctors had no approved drugs for it at all — which is why survodutide’s liver program is such a big deal.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M24 8l14 24H10z" fill="none" stroke="#fdca95" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#fdca95"/></svg><span class="term">SYNCHRONIZE</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Survodutide’s phase 3 program for weight management — the obesity front, run at global scale.</p>
-      <p class="gex"><span class="gslabel">Example</span>The scale trial — the verdict-in-progress.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The big weight-loss studies — still running.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M24 8l14 24H10z" fill="none" stroke="#fce096" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#fce096"/></svg><span class="term">SYNCHRONIZE</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The phase 3 clinical-trial program testing survodutide for chronic weight management, sponsored by Boehringer Ingelheim across multiple large global studies. Phase 3 is the final, large-scale stage of testing — randomized and placebo-controlled — intended to confirm efficacy and safety before a drug can be submitted to regulators for approval. The 76-week SYNCHRONIZE-1 results were reported in 2025.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The name of survodutide’s giant final-round trial program for weight loss — thousands of participants, mostly compared against a placebo group, run around the world. Phase 3 is the last and largest testing stage before a drug can be submitted for approval. These are the studies that decide whether regulators will ever approve the drug.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#e8561a" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Steatosis</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Fat accumulation in the liver — the earliest stage of fatty-liver disease and survodutide’s most direct target.</p>
-      <p class="gex"><span class="gslabel">Example</span>What the imaging measured — liver fat, going down.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A fatty liver — the starting point of the disease chain.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#1a2de8" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Steatosis</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The abnormal accumulation of triglyceride fat droplets inside liver cells, defining the earliest stage of fatty-liver disease. Simple steatosis often causes no symptoms and can be reversible, but it is the starting point of the chain that leads to inflammation and scarring. MRI-based liver-fat measurements in survodutide’s MASH trials track steatosis reduction directly.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A fancy word for a fatty liver — fat stored inside liver cells where it does not belong. On its own it is often harmless and reversible, but it is the first step on the road toward inflammation and scarring. Unlike scarring, simple steatosis can often be reversed if the underlying cause is addressed.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#fdbf7f" stroke-width="2.5"/><path d="M18 24h12" stroke="#fdbf7f" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Fibrosis</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Scarring of liver tissue from chronic injury — the progression MASH trials ultimately aim to halt or reverse.</p>
-      <p class="gex"><span class="gslabel">Example</span>The real enemy — fat is the warning, scarring is the damage.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Liver scars — what turns fatty liver into organ failure.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#fcb880" stroke-width="2.5"/><path d="M18 24h12" stroke="#fcb880" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Fibrosis</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The formation of excess scar tissue in the liver in response to chronic injury or inflammation, as stellate cells deposit collagen and the organ gradually stiffens. Fibrosis stage is the strongest predictor of liver-related death in MASH. Halting or reversing fibrosis is the key outcome that MASH drug trials ultimately aim to demonstrate.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Scar tissue forming inside the liver after long-term injury or inflammation. A fatty liver can bounce back; a scarred liver cannot, at least not easily. Slowing or reversing scarring is the real goal of every MASH drug trial.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#fdca95" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#fdca95"/><circle cx="34" cy="34" r="3" fill="#fdca95"/></svg><span class="term">Dual agonist</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>One molecule activating two receptors — here GLP-1 plus glucagon.</p>
-      <p class="gex"><span class="gslabel">Example</span>The design — two levers, one drug.</p>
-      <div class="plain"><span class="plabel">Plain English</span>One key, two locks.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#fce096" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#fce096"/><circle cx="34" cy="34" r="3" fill="#fce096"/></svg><span class="term">Dual agonist</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A single molecule engineered to bind and activate two different receptors. Survodutide is a dual agonist at the GLP-1 receptor and the glucagon receptor, combining appetite suppression and blood-sugar control with increased energy expenditure and liver-fat reduction. The strategy aims for a greater metabolic effect than either pathway alone.</p>
+      <div class="plain"><span class="plabel">Plain English</span>One drug that flips two switches at the same time. In survodutide’s case: the hunger-and-sugar switch (GLP-1) plus the energy-burn-and-liver switch (glucagon). The bet is that two effects together beat either one alone.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#e8561a" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#e8561a"/></svg><span class="term">Zealand Pharma</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Danish biotech specializing in peptide drugs — survodutide’s co-developer and peptide originator.</p>
-      <p class="gex"><span class="gslabel">Example</span>The boutique — peptide science, Danish edition.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The small specialist that designed the molecule.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#1a2de8" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#1a2de8"/></svg><span class="term">Zealand Pharma</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A Danish biotechnology company founded in 1998 that specializes in peptide therapeutics. It invented the peptide that became survodutide (BI 456906) and partnered with Boehringer Ingelheim to develop it through large-scale clinical trials. In the partnership, Zealand supplied the peptide science while Boehringer supplies the trial infrastructure.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The Danish biotech that designed the survodutide molecule. These are the peptide specialists who did the original science. The giant trials that followed are run by their partner, Boehringer Ingelheim.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fdbf7f" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fdbf7f" stroke-width="2.5"/></svg><span class="term">Boehringer Ingelheim</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Global pharma co-developing survodutide — bringing large-scale trial and commercial muscle.</p>
-      <p class="gex"><span class="gslabel">Example</span>The giant — running the global phase 3 machine.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The big partner funding and running the mega-trials.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdbf7f22"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fcb880" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fcb880" stroke-width="2.5"/></svg><span class="term">Boehringer Ingelheim</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A large German pharmaceutical company founded in 1885, active across human and animal health. It is co-developing survodutide with Zealand Pharma and sponsors the global SYNCHRONIZE phase 3 program. Within the collaboration, Boehringer leads clinical development, regulatory strategy, and any future commercialization.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The big German drug company running survodutide’s development. It provides the funding, the global trial network, and the regulatory muscle. Think of Zealand as the inventor and Boehringer as the machine that tests the invention.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M10 24h28M24 10v28" fill="none" stroke="#fdca95" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Investigational</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Still in clinical testing — not approved, not prescribable, available only in trials.</p>
-      <p class="gex"><span class="gslabel">Example</span>Survodutide’s status everywhere, on both indications.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Still in exams — not graduated to pharmacy shelves.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdca9522"/><path d="M10 24h28M24 10v28" fill="none" stroke="#fce096" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Investigational</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A drug that is still being tested in clinical trials and has not received marketing authorization from regulators such as the FDA or EMA. Investigational drugs cannot be prescribed or sold outside of clinical-trial settings and approved research protocols. Survodutide carries this status for both of its programs, obesity and MASH.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Still in testing — no regulator has approved it, no doctor can prescribe it, and you cannot get it at a pharmacy. “Investigational” is the official label for “not finished proving itself yet.”</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#e8561a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo (trial)</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The comparison arm — every survodutide result is measured against it.</p>
-      <p class="gex"><span class="gslabel">Example</span>The yardstick — “vs placebo” is doing quiet work in every headline.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The no-drug group keeping results honest.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#e8561a22"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#1a2de8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo (trial)</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>An inactive treatment given to a control group in a clinical trial, identical in appearance to the real drug but containing no active ingredient. Comparing outcomes against the placebo group isolates the drug’s true effect from expectation, lifestyle changes, and the natural course of disease. Every survodutide efficacy claim comes from a survodutide-vs-placebo comparison.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The fake-drug group that every real result gets measured against. Some participants get the drug, others get a lookalike with nothing in it — and the difference between the two groups is the drug’s actual effect. It keeps expectations and wishful thinking from polluting the results.</div>
     </div></div>
   </div>
 </section>
-<mini-poll slug="survodutide-mini-ch7"
+<mini-poll slug="survodutide-mini-ch10"
   data-question="Which term unlocked the story?"
   data-answers='[["🧬", "MASH"], ["🔥", "Glucagon"], ["🏥", "SYNCHRONIZE"], ["📊", "Investigational"]]'>
 </mini-poll>
 
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. A dual agonist playing a <strong>longer game than the scale</strong> — with the liver as the prize and phase 3 as the gate.</p>
+  <p class="lede">Eleven chapters, distilled. A dual agonist playing a <strong>longer game than the scale</strong> — with the liver as the prize and phase 3 as the gate.</p>
   <div class="take-grid">
     <div class="take reveal"><div class="tk">🧬</div><h4>Two switches, liver-leaning</h4><p><strong>Survodutide</strong> hits <strong>GLP-1</strong> (appetite) and <strong>glucagon</strong> (burn + liver defatting) — a dual agonist with a liver strategy.</p></div>
     <div class="take reveal"><div class="tk">🤝</div><h4>A tag-team drug</h4><p><strong>Zealand Pharma’s</strong> peptide science plus <strong>Boehringer Ingelheim’s</strong> trial machine.</p></div>
@@ -815,7 +1082,8 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="survodutide-mini-ch8"
+<h3 class="rate-h reveal">⭐ How would you rate this infographic?</h3>
+<mini-poll slug="survodutide-mini-ch11"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It’s okay"]]'>
 </mini-poll>
@@ -858,7 +1126,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#fdbf7f", "#d74e16", "#fdca95", "#c2410c", "#e8561a", "#fdbf7f"];
+  var colors=["#fcb880", "#d76d16", "#fce096", "#c25e0c", "#1a2de8", "#fcb880"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -965,7 +1233,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1", "ch2", "ch3", "ch4", "ch5", "ch6", "ch7", "ch8", "ch9", "ch10", "ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -1008,7 +1276,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#fdbf7f", "#fdca95", "#e8561a", "#fbbf24", "#edf0f9"],parts=[];
+  var cols=["#fcb880", "#fce096", "#1a2de8", "#fbbf24", "#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1044,12 +1312,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#fdbf7f", "#fdca95", "#dc5016", "#c2410c", "#e8561a", "#fdd1a3", "#fbbf24", "#431407", "#a5370a"] };
+  accents: ["#fcb880", "#fce096", "#1628dc", "#c25e0c", "#1a2de8", "#fde4a3", "#fbbf24", "#433207", "#a5500a"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="survodutide-mini-ch1"
+     <mini-poll slug="survodutide-mini-recap"
        data-question="A weight drug aimed at the liver too — does that stand out?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1128,8 +1396,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fdba74', '#a3e635', '#fb923c', '#a78bfa', '#f472b6',
-                 '#a3e635', '#fbbf24', '#ff2950', '#22d3ee'];
+                ['#fbd676', '#a3e635', '#fb923c', '#a78bfa', '#f4d072',
+                 '#a3e635', '#fbbf24', '#fac12e', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
